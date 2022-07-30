@@ -8,6 +8,7 @@ INPROJECT_VENV=true
 PRECOMMIT_INSTALL=true
 PRECOMMIT_AUTOUPDATE=true
 MAIN_BRANCH="master"
+INIT_COMMIT_MSG="initial commit"
 GITIGNORE=".idea
 .vscode
 __pycache__"
@@ -75,7 +76,7 @@ poetry run pre-commit run --all-files
 # make initial commit
 echo "\nMaking initial commit ..."
 git add .
-git commit -m 'Initial commit'
+git commit -m $INIT_COMMIT_MSG
 git branch -M $MAIN_BRANCH
 
 
