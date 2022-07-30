@@ -55,7 +55,7 @@ poetry add pre-commit --dev
 
 
 # fetch pre-commit config template from my repository
-echo "\nGetting pre-commit config template from https://github.com/kuchynkm/pre-commit-hooks-template.git ..."
+echo -e "Getting pre-commit config template from https://github.com/kuchynkm/pre-commit-hooks-template.git ..."
 curl --silent --show-error https://raw.githubusercontent.com/kuchynkm/pre-commit-hooks-template/master/.pre-commit-config.yaml  -O
 
 
@@ -69,20 +69,20 @@ fi
 
 
 # run pre-commit hooks
-echo "\nRunning pre-commit hooks ..."
+echo -e "Running pre-commit hooks ..."
 git add .
 poetry run pre-commit run --all-files
 
 
 # make initial commit
-echo "\nMaking initial commit ..."
+echo -e "Making initial commit ..."
 git add .
 git commit -m "'${INIT_COMMIT_MSG}'"
 git branch -M $MAIN_BRANCH
 
 
 # show project structure
-echo "\nCurrent project structure:"
+echo -e "Current project structure:"
 ls -al
 
 
