@@ -2,9 +2,9 @@
 
 It takes several steps to properly setup a python project according to the latest best practices. 
 
-Typically, these involve creating a folder structure for the project, setting up python with fresh virtual environment, git repository initialization, cofiguration of pre-commit hooks and more.  
+Typically, these involve creating a folder structure for the project, setting up python with a fresh virtual environment, git repository initialization, configuration of pre-commit hooks and more.  
 
-I compiled all the usual repetitive steps I do everytime I create a new python project into a single bash script and made it available here.
+I compiled all the repetitive steps I do everytime I create a new python project into a single bash script and made it available here.
 
 Feel free to adjust it to your needs. Edit the script's default values or add & remove steps to your liking.
 
