@@ -77,7 +77,7 @@ poetry run pre-commit run --all-files
 # make initial commit
 echo "\nMaking initial commit ..."
 git add .
-git commit -m $INIT_COMMIT_MSG
+git commit -m "'${INIT_COMMIT_MSG}'"
 git branch -M $MAIN_BRANCH
 
 
