@@ -37,5 +37,9 @@ You need to have the following tools installed already:
 
 
 ## Usage
-I recommend to clone the script, edit it as needed, make it executable and add it to your `$PATH`.
-This way, you will be able to run it from anywhere with `./newpyprj.sh`. At least that's the way I use it :)
+I recommend to clone the script, edit it as needed and make it executable.
+
+For future convenience, append it to `$PATH` via your `~/.bashrc`, `~/.zshrc` or 
+whatever alternative your shell is using.
+
+This way, you will be able to run it from anywhere, anytime. At least that's the way I use it :)
