@@ -1,5 +1,14 @@
 # NewPyPrj: automation of python project setup with pyenv + poetry + git
 
+It takes several steps to properly setup a python project according to the latest best practices. 
+
+Typically, these involve creating a folder structure for the project, setting up python with fresh virtual environment, git repository initialization, cofiguration of pre-commit hooks and more.  
+
+I compiled all the usual repetitive steps I do everytime I create a new python project into a single bash script and made it available here.
+
+Feel free to adjust it to your needs. Edit the script's default values or add & remove steps to your liking.
+
+
 ## Prerequestities
 
 You need to have the following tools installed already:
@@ -28,5 +37,5 @@ You need to have the following tools installed already:
 
 
 ## Usage
-I recommend to clone the script, edit the default values as needed, make it executable and add it to your `$PATH`.
+I recommend to clone the script, edit it as needed, make it executable and add it to your `$PATH`.
 This way, you will be able to run it from anywhere with `./newpyprj.sh`. At least that's the way I use it :)

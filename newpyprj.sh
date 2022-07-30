@@ -1,5 +1,6 @@
 #!/bin/bash
 # Shell script for automatic python project setup with pyenv, poetry and pre-commit hooks
+# Source: https://github.com/kuchynkm/newpyprj.git
 
 # DEFAULT values (customize as needed)
 PYTHON_VERSION="3.10.5"
