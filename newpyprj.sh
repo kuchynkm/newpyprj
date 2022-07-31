@@ -60,8 +60,8 @@ curl --silent --show-error https://raw.githubusercontent.com/kuchynkm/pre-commit
 
 # fetch .flake8 and mypy.ini from my linter config repo
 echo $'Getting pre-commit config template from https://github.com/kuchynkm/linter-configs.git ...'
-curl --silent --show-error https://github.com/kuchynkm/linter-configs/raw/master/.flake8  -O
-curl --silent --show-error https://github.com/kuchynkm/linter-configs/raw/master/mypy.ini  -O
+curl --silent --show-error https://raw.githubusercontent.com/kuchynkm/linter-configs/master/.flake8  -O
+curl --silent --show-error https://raw.githubusercontent.com/kuchynkm/linter-configs/master/mypy.ini  -O
 
 
 # setup pre-commit hooks
