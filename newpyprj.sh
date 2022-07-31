@@ -51,12 +51,17 @@ echo "$GITIGNORE" > .gitignore
 
 
 # add pre-commit hooks
-poetry add pre-commit --dev
+poetry add pylint pre-commit --dev
 
 
-# fetch pre-commit config template from my repository
+# fetch yaml template from my pre-commit config repo
 echo $'\nGetting pre-commit config template from https://github.com/kuchynkm/pre-commit-hooks-template.git ...'
 curl --silent --show-error https://raw.githubusercontent.com/kuchynkm/pre-commit-hooks-template/master/.pre-commit-config.yaml  -O
+
+# fetch .flake8 and mypy.ini from my linter config repo
+echo $'Getting pre-commit config template from https://github.com/kuchynkm/linter-configs.git ...'
+curl --silent --show-error https://github.com/kuchynkm/linter-configs/raw/master/.flake8  -O
+curl --silent --show-error https://github.com/kuchynkm/linter-configs/raw/master/mypy.ini  -O
 
 
 # setup pre-commit hooks
