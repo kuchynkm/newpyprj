@@ -12,7 +12,8 @@ MAIN_BRANCH="master"
 INIT_COMMIT_MSG="initial commit"
 GITIGNORE=".idea
 .vscode
-__pycache__"
+__pycache__
+.python-version"
 
 
 # setup python version
@@ -30,12 +31,19 @@ read -r project_name
 if [[ -z $project_name ]] ; then
     project_name=$PROJECT_NAME
 fi
-poetry new $project_name
+
+
+# create a project directory and set $pyversion as local
+mkdir $project_name
 cd $project_name
-
-
-# set local python version
 pyenv local $pyversion
+
+
+# to avoid unnecessary nested directories, create poetry project 
+# in $project_name/tmp and move its content one level up
+poetry new tmp --name $project_name
+cp -a tmp/. .
+rm -rf tmp
 
 
 # in-project .venv creation 
